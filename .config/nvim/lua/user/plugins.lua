@@ -50,7 +50,8 @@ return packer.startup(function(use)
   }
 
   -- Colorscheme
-  use({ "folke/tokyonight.nvim" })
+  -- use({ "folke/tokyonight.nvim" })
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Telescope
   use({ "nvim-telescope/telescope.nvim" })
