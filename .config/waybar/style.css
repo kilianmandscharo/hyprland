@@ -5,61 +5,69 @@
   margin: 0;
   padding: 0;
 }
+
 #waybar {
   background: #1e222a;
   color: #eeeeef;
   font-size: 14px;
-  font-family: "Hack Nerd Font";
+  font-family: "JetBrainsMono";
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding-left: 4px;
+  padding-right: 7px;
   color: #eeeeef;
+  border-radius: 30px;
 }
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+  border-radius: 30px;
+}
+
+tooltip label {
+  padding: 0 6px;
+}
+
 /* Fix: active workspace doesn't show up */
 /* #workspaces button.focused { */
 #workspaces button.active {
   color: #fa5aa4;
 }
 
-#custom-powermenu,
 #cpu,
-#temperature,
 #memory,
-#workspaces,
 #clock,
-#window,
 #pulseaudio,
-#custom-updates,
+#window,
 #network {
-  padding: 4px 8px;
+  padding: 4px 16px;
   background-color: #303643;
   border-radius: 30px;
   margin: 6px 4px;
 }
 
 #window {
-  color: #929db1;
+  padding: 4px 16px;
+  padding-top: 8px;
+  background-color: #303643;
+  border-radius: 30px;
+  margin: 6px 4px;
 }
 
-#tray {
-  margin-left: 4px;
-}
-
-#custom-updates {
-  color: #1788e4;
+#workspaces,
+#custom-powermenu {
+  padding: 4px 8px;
+  background-color: #303643;
+  border-radius: 30px;
+  margin: 6px 4px;
 }
 
 #custom-powermenu {
   color: #e06c75;
   padding-right: 11px;
   margin-right: 8px;
-}
-
-#scratchpad {
-  color: #cffafe;
-  padding-right: 4px;
-  padding-left: 4px;
 }
 
 #pulseaudio {
@@ -69,10 +77,6 @@
 
 #cpu {
   color: #61afef;
-}
-
-#temperature {
-  color: #98c379;
 }
 
 #memory {
@@ -87,6 +91,4 @@
 #clock {
   color: #fff;
   margin-left: 8px;
-  /* opacity: 0.7; */
-  /* font-size: 18px; */
 }

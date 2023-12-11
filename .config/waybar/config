@@ -5,6 +5,7 @@
     "modules-left": [
       "clock",
       "hyprland/workspaces",
+      "hyprland/window",
       ],
     "modules-center": [],
     "modules-right": [
@@ -21,17 +22,21 @@
         "default": ""
       }
     },
+    "hyprland/window": {
+      "format": "{}",
+      "separate-outputs": true
+    },
     "network": {
       "tooltip-format-ethernet": "{ifname} ",
       "interval": 2,
       "format": " {bandwidthDownBits}   {bandwidthUpBits}",
     },
     "memory": {
-      "format": "  {}%",
+      "format": "   {}%",
       "tooltip": false
     },
     "cpu": {
-      "format": "  {usage}%",
+      "format": "   {usage}%",
       "tooltip": false
     },
     "custom/powermenu": {
@@ -40,25 +45,15 @@
       "on-click": "exec wlogout -p layer-shell",
     },
     "pulseaudio": {
-      "format": "{volume}% {icon}",
-      "format-bluetooth": "{volume}% ",
+      "format": "   {volume}%",
       "format-muted": "",
-      "format-icons": {
-          "headphone": "",
-          "hands-free": "",
-          "headset": "",
-          "phone": "",
-          "portable": "",
-          "car": "",
-          "default": ["", ""]
-      },
       "scroll-step": 5,
       "on-click": "pavucontrol"
     },
     "clock": {
-      "format": "<span color=\"#56b6c2\">  </span> {:%H:%M - %d.%m.%Y}",
+      "format": "<span color=\"#56b6c2\">  </span> {:%H:%M}",
       "interval": 60,
-      "tooltip": false,
-      "tooltip-format": "{:%d %B %H:%M}"
+      "tooltip": true,
+      "tooltip-format": "{:%d.%m.%Y}"
     }
 }
